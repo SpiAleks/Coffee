@@ -6,37 +6,70 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .header {
- display: flex;
- justify-content: space-between;
- padding: 1rem;
- background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #ffffff;
 }
 
 .header__logo {
- font-size: 1.5rem;
- font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.header__bunner {}
+
+.header__h1 {}
+
+
 .nav__list {
- display: flex;
- gap: 1rem;
- list-style: none;
- background-color: #415167;
+  display: block;
+  gap: 10rem;
+  list-style: none;
+  background-color: #415167;
 }
-.icon icon--featured .nav__link {
- color: #2c5530;
- border-bottom: 2px solid #2c5530;
+
+.nav__item--active .nav__list {
+  color: #2c5530;
+  border-bottom: 2px solid #2c5530;
+
 }
-.card {
-    padding: 1rem;
- border: 1px solid #ddd;
- border-radius: 8px;
-}
-.card--featured {
- background: #f8f9fa;
- border-color: #2c5530;
-}
+
+.basket {}
+
+.info {}
+
+.info__title {}
+
+.firstcard {}
+
+.firstcard__text {}
+
+.secondcard {}
+
+.secondcard__text {}
+
+.thirdcard {}
+
+.thirdcard__text {}
+
+.fourthcard {}
+
+.fourthcard__text {}
+
+.cards {}
+
+.cards__title {}
+
+.firstcoffee {}
+
+.firstcoffee__price {}
+
+.firstcoffee__name {}
