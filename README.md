@@ -4,4 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения магазина Кофе.
 
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://github.com/SpiAleks/Coffee)
+- [Публичная страница на GitHub Pages](https://spialeks.github.io/Coffee/)

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ padding: 1rem;
+ background: #ffffff;
+}
+
+.header__logo {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+.nav__list {
+ display: flex;
+ gap: 1rem;
+ list-style: none;
+ background-color: #415167;
+}
+.icon icon--featured .nav__link {
+ color: #2c5530;
+ border-bottom: 2px solid #2c5530;
+}
+.card {
+    padding: 1rem;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+}
+.card--featured {
+ background: #f8f9fa;
+ border-color: #2c5530;
+}

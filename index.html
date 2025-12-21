@@ -1,137 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-<header>
-    <img src="LOGO.png" alt="Логотип компании">
-    <img src="assets/img/Bunner.png" alt="Баннер с кофе на главной странице">
-    <h1>Ваш персональный кофе</h1>
-    <aside>
-        <img src="assets/icons/shopping-cart-3.png" alt="Корзина">
-        <nav>
-            <p>Домашняя страница</p>
-            <p>Кофе</p>
-            <p>С рисунком</p>
-            <p>Комбо</p>
-            <p>Подарки</p>
-            <p>Связаться с нами</p>
-        </nav>
-    </aside>
-</header>
-<main>
-    <section>
-        <h2>Эксперты утверждают, что сплочённость команды профессионалов продолжает удивлять</h2>
 
-        <article>
-            <img src="assets/icons/ic.png" alt="Первое изображение">
-            <p>Частотность поисковых запросов станет частью наших традиций</p>
-        </article>
-        <article>
-            <img src="assets/icons/IC (1).png" alt="Второе изображение">
-            <p>Франция намерена исследовать, почему был сорван доклад председателя совхоза</p>
-        </article>
-        <article>
-            <img src="assets/icons/IC (2).png" alt="Третье изображение">
-            <p>Никто не&nbsp;вправе осуждать трубный призыв</p>
-        </article>
-        <article>
-            <img src="assets/icons/IC (3).png" alt="Четвёртое изображение">
-            <p>Базовый вектор развития не&nbsp;позволил союзу развалиться</p>
-        </article>
-    </section>
-    <section>
-        <h2>Консультация с&nbsp;широким активом бодрит</h2>
-        <article>
-            <img src="assets/img/IMAGE.png" alt="Первый кофе">
-            <p>99.000</p>
-            <p>Рево на&nbsp;утро</p>
-            <p>Цены на&nbsp;бензин начинают падать</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-        <article>
-            <img src="assets/img/IMAGE (2).png" alt="Второй кофе">
-            <p>85.000</p>
-            <p>Рево на&nbsp;каждый день</p>
-            <p>Сложно сказать, почему героям были возданы соответствующие почести</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-        <article>
-            <img src="assets/img/image (1).png" alt="Третий кофе">
-            <p>139.000</p>
-            <p>Рево на утро</p>
-            <p>Благородные стремления не&nbsp;спасут: потускнели светлые лики икон</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-        <article>
-            <img src="assets/img/IMAGE (3).png" alt="Четвёртый кофе">
-            <p>75.000</p>
-            <p>Рево сильный</p>
-            <p>Частокол на&nbsp;границе починят</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-    </section>
-    <section>
-        <h2>Инцидент не&nbsp;исчерпан: жизнь прекрасна</h2>
-        <article>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="LOGO.png" alt="Логотип компании">
+        </div>
+        <div class="header__bunner">
+            <img src="assets/img/Bunner.png" alt="Баннер с кофе на главной странице">
+        </div>
+        <div class="header__h1">
+            <h1>Ваш
+                персональный
+                кофе</h1>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <div class="basket">
+                    <img src="assets/icons/shopping-cart-3.png" alt="Корзина">
+                </div>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#main">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#coffee">Кофе</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#">С рисунком</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#giftset">Подарки</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#combo">Комбо</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="#footer">Связаться с нами</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info" id="main">
+            <h2 class="info__title">Эксперты утверждают, что сплочённость команды профессионалов продолжает удивлять
+            </h2>
+            <div class="firstcard">
+                <img src="assets/icons/ic.png" alt="Первое изображение">
+                <p class="firstcard__text">Частотность поисковых запросов станет частью наших традиций</p>
+            </div>
+            <div class="secondcard">
+                <img src="assets/icons/IC(1).png" alt="Второе изображение">
+                <p class="secondcard__text">Франция намерена исследовать, почему был сорван доклад председателя совхоза
+                </p>
+            </div>
+            <div class="thirdcard">
+                <img src="assets/icons/IC(2).png" alt="Третье изображение">
+                <p class="thirdcard__text">Никто не&nbsp;вправе осуждать трубный призыв</p>
+            </div>
+            <div class="fourthcard">
+                <img src="assets/icons/IC(3).png" alt="Четвёртое изображение">
+                <p class="fourthcard__text">Базовый вектор развития не&nbsp;позволил союзу развалиться</p>
+            </div>
+        </section>
+        <section class="cards" id="coffee">
+            <h2 class="cards__title">Консультация с&nbsp;широким активом бодрит</h2>
+            <div class="firstcoffee">
+                <img src="assets/img/IMAGE.png" alt="Первый кофе">
+                <p class="firstcoffee__price">99.000</p>
+                <p class="firstcoffee__name">Рево на&nbsp;утро</p>
+                <p class="firstcoffee__description">Цены на&nbsp;бензин начинают падать</p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+            <div class="secondcoffee">
+                <img src="assets/img/IMAGE(2).png" alt="Второй кофе">
+                <p class="secondcoffee__price">85.000</p>
+                <p class="secondcoffee__name">Рево на&nbsp;каждый день</p>
+                <p class="secondcoffee__description">Сложно сказать, почему героям были возданы соответствующие почести
+                </p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+            <div class="thirdcoffee">
+                <img src="assets/img/image(1).png" alt="Третий кофе">
+                <p class="thirdcoffee__price">139.000</p>
+                <p class="thirdcoffee__name">Рево оригинальный</p>
+                <p class="thirdcoffee__description">Благородные стремления не&nbsp;спасут: потускнели светлые лики икон
+                </p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+            <div class="fourthcoffee">
+                <img src="assets/img/IMAGE(3).png" alt="Четвёртый кофе">
+                <p class="fourthcoffee__price">75.000</p>
+                <p class="fourthcoffee__name">Рево сильный</p>
+                <p class="fourthcoffee__description">Частокол на&nbsp;границе починят</p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+        </section>
+        <section class="Giftset" id="giftset">
+            <h2 class="Giftset__title">Инцидент не&nbsp;исчерпан: жизнь прекрасна</h2>
             <img src="assets/img/pr-0018-r.png" alt="Изображение набора кофе">
-            <p>285.000</p>
-            <p>Случайный текст похож на&nbsp;глас грядущего поколения</p>
-            <p>Противоположная точка зрения подразумевает, что предприниматели в&nbsp;сети интернет представляют собой не&nbsp;что иное, как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть подвергнуты целой серии независимых исследований. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, своевременно верифицированы.</p>
-            <article>
-                <img src="assets/icons/IC_coffee.png" alt="Кофейные зёрнышки">
-                <p>Зёрна</p>
-                <p>Изысканная смесь Робусты</p>
-            </article>
-            <article>
-                <img src="assets/icons/IC_Mountain.png" alt="Горы">
-                <p>Высота</p>
-                <p>700&nbsp;&mdash; 800&nbsp;м</p>
-            </article>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-    </section>
-    <section>
-        <h2>Давайте разбираться: был сорван доклад председателя совхоза!</h2>
-        <article>
-            <img src="assets/img/image (6).png" alt="Первый кофе">
-            <p>147.000</p>
-            <p>155.000</p>
-            <p>Близость к&nbsp;государственным границам стала доступной ширнармассам</p>
-            <p>Таким образом, базовый вектор развития, в&nbsp;своём классическом представлении, допускает внедрение переосмысления внешнеэкономических политик.</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-        <article>
-            <img src="assets/img/image (7).png" alt="Второй кофе">
-            <p>156.000</p>
-            <p>165.000</p>
-            <p>Мелочь, а&nbsp;приятно: объемы выросли</p>
-            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: граница обучения кадров требует определения и&nbsp;уточнения благоприятных перспектив.</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-        <article>
-            <img src="assets/img/image (8).png" alt="Третий кофе">
-            <p>275.000</p>
-            <p>280.000</p>
-            <p>Тяжёлое машиностроение&nbsp;&mdash; это вам не&nbsp;далёкий барабанный бой</p>
-            <p>Кстати, сделанные на&nbsp;базе <nobr>интернет-аналитики</nobr> выводы освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, описаны максимально подробно.</p>
-            <p>Купить сейчас</p>
-            <p>Подробнее</p>
-        </article>
-    </section>
-</main>
-<footer>
-    <p>© Рево Кофе - 2025</p>
-</footer>
+            <div class="giftsetcard">
+                <p class="giftsetcard__price">285.000</p>
+                <p class="giftsetcard__title">Случайный текст похож на&nbsp;глас грядущего поколения</p>
+                <p class="giftsetcard__description">Противоположная точка зрения подразумевает, что предприниматели
+                    в&nbsp;сети интернет представляют
+                    собой не&nbsp;что иное, как квинтэссенцию победы маркетинга над разумом и&nbsp;должны быть
+                    подвергнуты целой серии независимых исследований. В&nbsp;рамках спецификации современных стандартов,
+                    реплицированные с&nbsp;зарубежных источников, современные исследования освещают чрезвычайно
+                    интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, своевременно
+                    верифицированы.</p>
+                <div class="Grains">
+                    <img src="assets/icons/IC_coffee.png" alt="Кофейные зёрнышки">
+                    <p class="Grains__title">Зёрна</p>
+                    <p class="Grains__text">Изысканная смесь Робусты</p>
+                </div>
+                <div class="Mountains">
+                    <img src="assets/icons/IC_Mountain.png" alt="Горы">
+                    <p class="Mountains__title">Высота</p>
+                    <p class="Mountains__text">700&nbsp;&mdash; 800&nbsp;м</p>
+                </div>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+        </section>
+        <section class="combo" id="combo">
+            <h2 class="combo__title">Давайте разбираться: был сорван доклад председателя совхоза!</h2>
+            <div class="firstcombo">
+                <img src="assets/img/image(6).png" alt="Первый кофе">
+                <p class="firstcombo__newprice">147.000</p>
+                <p class="firstcombo__oldprice">155.000</p>
+                <p class="firstcombo__title">Близость к&nbsp;государственным границам стала доступной ширнармассам</p>
+                <p class="firstcombo__text">Таким образом, базовый вектор развития, в&nbsp;своём классическом
+                    представлении, допускает внедрение
+                    переосмысления внешнеэкономических политик.</p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+            <div class="secondcombo">
+                <img src="assets/img/image(7).png" alt="Второй кофе">
+                <p class="secondcombo__newprice">156.000</p>
+                <p class="secondcombo__oldprice">165.000</p>
+                <p class="secondcombo__title">Мелочь, а&nbsp;приятно: объемы выросли</p>
+                <p class="secondcombo__text">Высокий уровень вовлечения представителей целевой аудитории является четким
+                    доказательством простого
+                    факта: граница обучения кадров требует определения и&nbsp;уточнения благоприятных перспектив.</p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+            <div class="thirdcombo">
+                <img src="assets/img/image(8).png" alt="Третий кофе">
+                <p class="thirdcombo__newprice">275.000</p>
+                <p class="thirdcombo__oldprice">280.000</p>
+                <p class="thirdcombo__title">Тяжёлое машиностроение&nbsp;&mdash; это вам не&nbsp;далёкий барабанный бой
+                </p>
+                <p class="thirdcombo__text">В&nbsp;частности, убеждённость некоторых оппонентов играет определяющее
+                    значение для анализа существующих паттернов поведения.</p>
+                <div class="basketbutton basketbutton--featured">
+                    <p class="basketbutton__text">Купить сейчас</p>
+                </div>
+                <div class="descriptionbutton descriptionbutton--featured">
+                    <p class="descriptionbutton__text">Подробнее</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>© Рево Кофе - 2025</p>
+    </footer>
 </body>
+
 </html>
