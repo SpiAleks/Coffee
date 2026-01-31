@@ -480,115 +480,240 @@ footer p {
   .Giftset {
     flex-direction: column;
   }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #415167;
+    padding: 80px 20px;
+    transition: right 0.4s ease;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    padding: 15px 0;
+  }
 }
 
 @media (max-width: 1199px) {
-    .header__h1 h1 {
-        font-size: 2.8rem;
-    }
-    .masonry__grid {
-        column-count: 3;
-    }
+  .header__h1 h1 {
+    font-size: 2.8rem;
+  }
+
+  .masonry__grid {
+    column-count: 3;
+  }
 }
 
 @media (max-width: 991px) {
-    .header__h1 h1 {
-        font-size: 2.5rem;
-    }
-    .info__cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .masonry__grid {
-        column-count: 2;
-    }
-    .Giftset {
-        flex-direction: column;
-    }
+  .header__h1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .info__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .masonry__grid {
+    column-count: 2;
+  }
+
+  .Giftset {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767px) {
-    .header__h1 h1 {
-        font-size: 2rem;
-    }
-    .header__nav {
-        position: static;
-        margin-top: 20px;
-        width: 100%;
-    }
-    .nav__list {
-        justify-content: center;
-        gap: 10px;
-    }
-    .nav__item {
-        width: auto;
-        padding: 6px 12px;
-        font-size: 0.9rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    section {
-        padding: 50px 15px;
-    }
-    .cards__grid,
-    .combo-cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-    }
-    .masonry__grid {
-        column-count: 2;
-        column-gap: 16px;
-    }
+  .header__h1 h1 {
+    font-size: 2rem;
+  }
+
+  .header__nav {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .nav__list {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav__item {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .cards__grid,
+  .combo-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .masonry__grid {
+    column-count: 2;
+    column-gap: 16px;
+  }
 }
 
 @media (max-width: 575px) {
-    .header__h1 h1 {
-        font-size: 1.8rem;
-    }
-    .info__cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .nav__list {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-    .nav__item {
-        width: 80%;
-        text-align: center;
-    }
-    .nav__basket {
-        order: 0;
-        margin-bottom: 10px;
-    }
-    .masonry__grid {
-        column-count: 1;
-    }
-    .card__buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .card .basketbutton,
-    .card .descriptionbutton {
-        width: 100%;
-    }
+  .header__h1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .info__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav__item {
+    width: 80%;
+    text-align: center;
+  }
+
+  .nav__basket {
+    order: 0;
+    margin-bottom: 10px;
+  }
+
+  .masonry__grid {
+    column-count: 1;
+  }
+
+  .card__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card .basketbutton,
+  .card .descriptionbutton {
+    width: 100%;
+  }
 }
 
 @media (max-width: 399px) {
-    .header__h1 h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .card__price, .giftsetcard__price {
-        font-size: 1.5rem;
-    }
-    .card__name, .giftsetcard__title {
-        font-size: 1.2rem;
-    }
-    .masonry__item {
-        padding: 1rem;
-    }
+  .header__h1 h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card__price,
+  .giftsetcard__price {
+    font-size: 1.5rem;
+  }
+
+  .card__name,
+  .giftsetcard__title {
+    font-size: 1.2rem;
+  }
+
+  .masonry__item {
+    padding: 1rem;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle__line {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #8B4513;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
 }

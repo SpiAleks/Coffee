@@ -21,7 +21,12 @@
         <div class="header__bunner">
             <img src="assets/img/Bunner.png" alt="Баннер с кофе на главной странице">
         </div>
-        <nav class="header__nav nav">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+        </button>
+        <nav class="header__nav nav" id="mainNav">
             <ul class="nav__list">
                 <li class="nav__basket">
                     <a class="nav__link" href="#">
@@ -202,6 +207,10 @@
     <footer id="footer">
         <p>© Рево Кофе - 2025</p>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
